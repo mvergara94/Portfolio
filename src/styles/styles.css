@@ -13,7 +13,7 @@
   margin: 0;
   list-style: none;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-decoration: none;
 }
 
@@ -125,5 +125,63 @@ section {
 
   .navlist.open {
     top: 100%;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home-image {
+    margin-bottom: 5rem;
+  }
+
+  .liquid-shape {
+    width: 80%;
+    left: 10%;
+    top: 13%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .skill-main {
+    grid-template-columns: 1fr;
+  }
+
+  .fillter-buttons {
+    margin: 2.5rem 0;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 80%;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  .fillter-buttons .btn {
+    font-size: 0.8rem;
+  }
+
+  .img-about img {
+    width: 300px;
+  }
+
+  .info-about1,
+  .info-about2,
+  .info-about3 {
+    display: none;
+  }
+
+  .img-about p {
+    font-size: 1rem;
   }
 }
