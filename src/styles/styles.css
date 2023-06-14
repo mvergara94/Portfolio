@@ -33,6 +33,8 @@
     0 0 150px rgba(18, 247, 255, 0.3);
 }
 
+/* Scroll Style */
+
 ::-webkit-scrollbar {
   height: 0;
   width: 0.5rem;
@@ -47,6 +49,7 @@
   border-radius: 5rem;
 }
 
+/*  */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);

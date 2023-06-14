@@ -28,9 +28,13 @@ header.sticky {
 }
 
 .navlist a {
+  display: inline-block;
   color: var(--text-color);
   font-weight: 500;
   padding: 10px 20px;
+  animation: slideAnimation 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+  opacity: 0;
 }
 
 .navlist a:hover {
@@ -59,5 +63,14 @@ header.sticky {
   color: var(--hover-color);
 }
 
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 
-
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
